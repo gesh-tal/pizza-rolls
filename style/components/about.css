@@ -1,0 +1,53 @@
+
+.about {
+	width: 100%;
+	background-image: url('../../images/bg4.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	padding: 130px 50px;
+}
+.about_info {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin: 100px 0px;
+}
+.about .text {
+	padding-left: 0;
+}
+.about .text h2, .about .text span {
+	font-family: 'El Messiri', sans-serif;
+	font-size: 40px;
+/*	color: sandybrown;
+	color: lightsalmon;
+	color: coral;*/
+	color: darkorange;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 4px #000;
+}
+.about .text p, #about_title span {
+	color: #000;
+	text-shadow: 2px 2px 6px #000;
+}
+
+
+
+
+
+@media (max-width: 910px) {
+	.about {
+		padding: 20px 50px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
