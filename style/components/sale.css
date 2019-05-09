@@ -1,0 +1,96 @@
+
+.sale {
+	width: 100%;
+	/*padding: 100px 40px;*/
+}
+.sale_info {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	/*margin: 100px 40px;*/
+}
+.sale_block {
+	width: 50%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+}
+#sale1 {
+	background-image: url('../../images/sale1.jpg');
+	background-position: bottom;
+}
+#sale2 {
+	background-image: url('../../images/sale2.jpg');
+	display: flex;
+	justify-content: flex-end;
+	background-position: left;
+}
+#sale3 {
+	background-image: url('../../images/sale3.jpg');
+	display: flex;
+	align-items: flex-end;
+	background-position: right;
+}
+#sale4 {
+	background-image: url('../../images/bg8.jpg');
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+#sale1 .text {
+	margin-top: 40px;
+}
+#sale2 .text {
+	margin: 40px 40px 0 0;
+	text-align: right;
+}
+#sale3 .text {
+	margin-bottom: 10px;
+}
+#sale4 .text {
+	text-align: right;
+	margin-bottom: 10px;
+	margin-right: 40px;
+}
+.sale_block .text h2 {
+	font-family: 'El Messiri', sans-serif;
+	font-size: 30px;
+	color: darkorange;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 3px #000, 2px 2px 2px #000, 2px 2px 2px #fff;
+}
+.sale_block .text p {
+	color: #fff;
+	text-shadow: 3px 2px 4px #000, 3px -1px 2px #000;
+}
+
+
+
+
+@media (max-width: 768px) {
+	.sale_block .text h2, .sale_block .text p {
+		font-size: 20px;
+	}
+	#sale1 .text, #sale3 .text {
+		padding-left: 20px;
+	}
+	#sale2 .text, #sale4 .text {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 647px) {
+	.sale_block {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
