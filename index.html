@@ -9,8 +9,25 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="style/all.css">
+	<script src="script/vendor/jquery.3.3.1.js" ></script>
 </head>
 <body>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="pixel-spinner">
+			<div class="pixel-spinner-inner"></div>
+		</div>
+	</div>
+	<script>
+    	//<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('.pixel-spinner').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+    	//]]>
+	</script>
+	
 	<header>
 		<div class="overlay"></div>
 		<div class="header_nav">
@@ -438,7 +455,7 @@
 		</div>
 	</footer>
 
-	<script src="script/vendor/jquery.3.3.1.js" ></script>
+	
 	<script src="script/vendor/modernizr.custom.js" ></script>
 	<script src="script/vendor/lightgallery.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
