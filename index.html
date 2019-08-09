@@ -9,17 +9,29 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="style/all.css">
-
+	<script src="script/vendor/jquery.3.3.1.js" ></script>
 </head>
 <body>
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="pixel-spinner">
+			<div class="pixel-spinner-inner"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('.pixel-spinner').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+    //]]>
+	</script>
 
 	<header>
 		<div class="overlay"></div>
 		<div class="header_nav">
-			<div class="logo">
-				<!-- <img src="images/logo.png" alt=""> -->
-			</div>
-
 			<div class="nav_menu">
 				<a class="nav_link" href="#about">О нас</a>
 				<a class="nav_link" href="#sale">Акции</a>
@@ -31,10 +43,6 @@
 		</div>
 		<div class="header_nav_mobile">
 			<div class="header_nav_mobile_top">
-				<div class="logo">
-					<!-- <img src="images/logo.png" alt=""> -->
-				</div>
-				
 				<div class="mobile_menu_icon">
 					<div class="icon_row"></div>
 					<div class="icon_row"></div>
@@ -58,7 +66,6 @@
 			</div>
 		</div>
 	</header>
-
 
 	<section class="about" id="about">
 		<div class="about_info">
@@ -263,169 +270,169 @@
 			</div>
 		</div>
 
-			<h2>Пицца</h2>
-			<div class="menu_grid" id="pizza">
-				<div class="menu_block" data-src="images/pizza1.jpg" data-sub-html="<h1>Карбонара</h1><p>томатный соус, моцарелла, пармезан, яйца, бекон</p>" data-download-url="false">
-					<div class="menu_img" >
-						<img src="images/pizza01.png" alt="">
-					</div>
-					<div class="menu_text">
-						<h3 class="title">Карбонара</h3>
-						<div class="ing">томатный соус, моцарелла, пармезан, яйца, бекон</div>
-						<div class="price">1600 тенге</div>
-					</div>
-					<div class="menu_order">
-						<div class="menu_counter">
-							<div class="button more">+</div>
-							<input class="amount" type="text" value="0">
-							<div class="button less">-</div>
-						</div>
-						<div class="menu_button">
-							<a href="">В корзину</a>
-						</div>
-					</div>
+		<h2>Пицца</h2>
+		<div class="menu_grid" id="pizza">
+			<div class="menu_block" data-src="images/pizza1.jpg" data-sub-html="<h1>Карбонара</h1><p>томатный соус, моцарелла, пармезан, яйца, бекон</p>" data-download-url="false">
+				<div class="menu_img" >
+					<img src="images/pizza01.png" alt="">
 				</div>
-				<div class="menu_block" data-src="images/pizza3.jpg" data-sub-html="<h3>Монтанара</h3><p>томатный соус, моцарелла, грибы, пепперони и мягкий сыр страккино</p>" data-download-url="false">
-					<div class="menu_img" >
-						<img src="images/pizza03.png" alt="">
-					</div>
-					<div class="menu_text">
-						<h3 class="title">Монтанара</h3>
-						<div class="ing">томатный соус, моцарелла, грибы, пепперони и мягкий сыр страккино </div>
-						<div class="price">1800 тенге</div>
-					</div>
-					<div class="menu_order">
-						<div class="menu_counter">
-							<div class="button more">+</div>
-							<input class="amount" type="text" value="0">
-							<div class="button less">-</div>
-						</div>
-						<div class="menu_button">
-							<a href="">В корзину</a>
-						</div>
-					</div>
+				<div class="menu_text">
+					<h3 class="title">Карбонара</h3>
+					<div class="ing">томатный соус, моцарелла, пармезан, яйца, бекон</div>
+					<div class="price">1600 тенге</div>
 				</div>
-				<div class="menu_block" data-src="images/pizza004.png" data-sub-html="<h3>Морская</h3><p>лосось, креветки, моцарелла, белый соус</p>" data-download-url="false">
-					<div class="menu_img" >
-						<img src="images/pizza04.png" alt="">
+				<div class="menu_order">
+					<div class="menu_counter">
+						<div class="button more">+</div>
+						<input class="amount" type="text" value="0">
+						<div class="button less">-</div>
 					</div>
-					<div class="menu_text">
-						<h3 class="title">Морская</h3>
-						<div class="ing">лосось, креветки, моцарелла, белый соус</div>
-						<div class="price">2500 тенге</div>
-					</div>
-					<div class="menu_order">
-						<div class="menu_counter">
-							<div class="button more">+</div>
-							<input class="amount" type="text" value="0">
-							<div class="button less">-</div>
-						</div>
-						<div class="menu_button">
-							<a href="">В корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="menu_block" data-src="images/pizza5.jpg" data-sub-html="<h3>Тирольская</h3><p>томатный соус, моцарелла, сыр горгонзола</p>" data-download-url="false">
-					<div class="menu_img" >
-						<img src="images/pizza05.png" alt="">
-					</div>
-					<div class="menu_text">
-						<h3 class="title">Тирольская</h3>
-						<div class="ing">томатный соус, моцарелла, сыр горгонзола</div>
-						<div class="price">1400 тенге</div>
-					</div>
-					<div class="menu_order">
-						<div class="menu_counter">
-							<div class="button more">+</div>
-							<input class="amount" type="text" value="0">
-							<div class="button less">-</div>
-						</div>
-						<div class="menu_button">
-							<a href="">В корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="menu_block" data-src="images/pizza009.png" data-sub-html="<h3>4 сезона</h3><p>шампиньоны, моцарелла, пармезан, томаты, ветчина</p>" data-download-url="false">
-					<div class="menu_img" >
-						<img src="images/pizza09.png" alt="">
-					</div>
-					<div class="menu_text">
-						<h3 class="title">4 сезона</h3>
-						<div class="ing">шампиньоны, моцарелла, пармезан, томаты, ветчина</div>
-						<div class="price">1700 тенге</div>
-					</div>
-					<div class="menu_order">
-						<div class="menu_counter">
-							<div class="button more">+</div>
-							<input class="amount" type="text" value="0">
-							<div class="button less">-</div>
-						</div>
-						<div class="menu_button">
-							<a href="">В корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="menu_block" data-src="images/pizza14.jpg" data-sub-html="<h3>Пепперони</h3><p>пепперони, моцарелла, томатный соус</p>" data-download-url="false">
-					<div class="menu_img" >
-						<img src="images/pizza014.png" alt="">
-					</div>
-					<div class="menu_text">
-						<h3 class="title">Пепперони</h3>
-						<div class="ing">пепперони, моцарелла, томатный соус</div>
-						<div class="price">1600 тенге</div>
-					</div>
-					<div class="menu_order">
-						<div class="menu_counter">
-							<div class="button more">+</div>
-							<input class="amount" type="text" value="0">
-							<div class="button less">-</div>
-						</div>
-						<div class="menu_button">
-							<a href="">В корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="menu_block" data-src="images/pizza0010.png" data-sub-html="<h3>Пицца с лососем</h3><p>лосось, томатный соус, моцарелла, листья салата</p>" data-download-url="false">
-					<div class="menu_img" >
-						<img src="images/pizza010.png" alt="">
-					</div>
-					<div class="menu_text">
-						<h3 class="title">Пицца с лососем</h3>
-						<div class="ing">лосось, томатный соус, моцарелла, листья салата</div>
-						<div class="price">2200 тенге</div>
-					</div>
-					<div class="menu_order">
-						<div class="menu_counter">
-							<div class="button more">+</div>
-							<input class="amount" type="text" value="0">
-							<div class="button less">-</div>
-						</div>
-						<div class="menu_button">
-							<a href="">В корзину</a>
-						</div>
-					</div>
-				</div>
-				<div class="menu_block" data-src="images/pizza0015.png" data-sub-html="<h3>4 сыра</h3><p>моцарелла, пармезан, горгонзолла, эмменталь, томатный соус</p>" data-download-url="false">
-					<div class="menu_img" >
-						<img src="images/pizza015.png" alt="">
-					</div>
-					<div class="menu_text">
-						<h3 class="title">4 сыра</h3>
-						<div class="ing">моцарелла, пармезан, горгонзолла, эмменталь, томатный соус</div>
-						<div class="price">2000 тенге</div>
-					</div>
-					<div class="menu_order">
-						<div class="menu_counter">
-							<div class="button more">+</div>
-							<input class="amount" type="text" value="0">
-							<div class="button less">-</div>
-						</div>
-						<div class="menu_button">
-							<a href="">В корзину</a>
-						</div>
+					<div class="menu_button">
+						<a href="">В корзину</a>
 					</div>
 				</div>
 			</div>
+			<div class="menu_block" data-src="images/pizza3.jpg" data-sub-html="<h3>Монтанара</h3><p>томатный соус, моцарелла, грибы, пепперони и мягкий сыр страккино</p>" data-download-url="false">
+				<div class="menu_img" >
+					<img src="images/pizza03.png" alt="">
+				</div>
+				<div class="menu_text">
+					<h3 class="title">Монтанара</h3>
+					<div class="ing">томатный соус, моцарелла, грибы, пепперони и мягкий сыр страккино </div>
+					<div class="price">1800 тенге</div>
+				</div>
+				<div class="menu_order">
+					<div class="menu_counter">
+						<div class="button more">+</div>
+						<input class="amount" type="text" value="0">
+						<div class="button less">-</div>
+					</div>
+					<div class="menu_button">
+						<a href="">В корзину</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu_block" data-src="images/pizza004.png" data-sub-html="<h3>Морская</h3><p>лосось, креветки, моцарелла, белый соус</p>" data-download-url="false">
+				<div class="menu_img" >
+					<img src="images/pizza04.png" alt="">
+				</div>
+				<div class="menu_text">
+					<h3 class="title">Морская</h3>
+					<div class="ing">лосось, креветки, моцарелла, белый соус</div>
+					<div class="price">2500 тенге</div>
+				</div>
+				<div class="menu_order">
+					<div class="menu_counter">
+						<div class="button more">+</div>
+						<input class="amount" type="text" value="0">
+						<div class="button less">-</div>
+					</div>
+					<div class="menu_button">
+						<a href="">В корзину</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu_block" data-src="images/pizza5.jpg" data-sub-html="<h3>Тирольская</h3><p>томатный соус, моцарелла, сыр горгонзола</p>" data-download-url="false">
+				<div class="menu_img" >
+					<img src="images/pizza05.png" alt="">
+				</div>
+				<div class="menu_text">
+					<h3 class="title">Тирольская</h3>
+					<div class="ing">томатный соус, моцарелла, сыр горгонзола</div>
+					<div class="price">1400 тенге</div>
+				</div>
+				<div class="menu_order">
+					<div class="menu_counter">
+						<div class="button more">+</div>
+						<input class="amount" type="text" value="0">
+						<div class="button less">-</div>
+					</div>
+					<div class="menu_button">
+						<a href="">В корзину</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu_block" data-src="images/pizza009.png" data-sub-html="<h3>4 сезона</h3><p>шампиньоны, моцарелла, пармезан, томаты, ветчина</p>" data-download-url="false">
+				<div class="menu_img" >
+					<img src="images/pizza09.png" alt="">
+				</div>
+				<div class="menu_text">
+					<h3 class="title">4 сезона</h3>
+					<div class="ing">шампиньоны, моцарелла, пармезан, томаты, ветчина</div>
+					<div class="price">1700 тенге</div>
+				</div>
+				<div class="menu_order">
+					<div class="menu_counter">
+						<div class="button more">+</div>
+						<input class="amount" type="text" value="0">
+						<div class="button less">-</div>
+					</div>
+					<div class="menu_button">
+						<a href="">В корзину</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu_block" data-src="images/pizza14.jpg" data-sub-html="<h3>Пепперони</h3><p>пепперони, моцарелла, томатный соус</p>" data-download-url="false">
+				<div class="menu_img" >
+					<img src="images/pizza014.png" alt="">
+				</div>
+				<div class="menu_text">
+					<h3 class="title">Пепперони</h3>
+					<div class="ing">пепперони, моцарелла, томатный соус</div>
+					<div class="price">1600 тенге</div>
+				</div>
+				<div class="menu_order">
+					<div class="menu_counter">
+						<div class="button more">+</div>
+						<input class="amount" type="text" value="0">
+						<div class="button less">-</div>
+					</div>
+					<div class="menu_button">
+						<a href="">В корзину</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu_block" data-src="images/pizza0010.png" data-sub-html="<h3>Пицца с лососем</h3><p>лосось, томатный соус, моцарелла, листья салата</p>" data-download-url="false">
+				<div class="menu_img" >
+					<img src="images/pizza010.png" alt="">
+				</div>
+				<div class="menu_text">
+					<h3 class="title">Пицца с лососем</h3>
+					<div class="ing">лосось, томатный соус, моцарелла, листья салата</div>
+					<div class="price">2200 тенге</div>
+				</div>
+				<div class="menu_order">
+					<div class="menu_counter">
+						<div class="button more">+</div>
+						<input class="amount" type="text" value="0">
+						<div class="button less">-</div>
+					</div>
+					<div class="menu_button">
+						<a href="">В корзину</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu_block" data-src="images/pizza0015.png" data-sub-html="<h3>4 сыра</h3><p>моцарелла, пармезан, горгонзолла, эмменталь, томатный соус</p>" data-download-url="false">
+				<div class="menu_img" >
+					<img src="images/pizza015.png" alt="">
+				</div>
+				<div class="menu_text">
+					<h3 class="title">4 сыра</h3>
+					<div class="ing">моцарелла, пармезан, горгонзолла, эмменталь, томатный соус</div>
+					<div class="price">2000 тенге</div>
+				</div>
+				<div class="menu_order">
+					<div class="menu_counter">
+						<div class="button more">+</div>
+						<input class="amount" type="text" value="0">
+						<div class="button less">-</div>
+					</div>
+					<div class="menu_button">
+						<a href="">В корзину</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<footer>
@@ -435,22 +442,18 @@
 				<a href="#sale">Акции</a>
 				<a href="#sushi">Суши & Роллы</a>
 				<a href="#pizza">Пицца</a>
-				<!-- <a href="#">Сеты</a> -->
-				
 			</div>
-			<!-- <div class="contact">
+			<div class="contact">
 				<p>Наши контакты:</p>
 				<a href="tel:+77778090900">+77778090900</a>
 				<br/><br/>
 
 				<p>Адрес:</p>
 				<p>Шарль де Голля 82</p>
-			</div> -->
+			</div>
 		</div>
 	</footer>
 
-
-	<script src="script/vendor/jquery.3.3.1.js" ></script>
 	<script src="script/vendor/modernizr.custom.js" ></script>
 	<script src="script/vendor/lightgallery.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
