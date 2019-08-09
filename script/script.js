@@ -42,14 +42,6 @@ $(document).ready(function(){
 	      return 150 * (i+1)
 	    }
 	  });
-	  // .add({
-	  //   targets: '.ml3',
-	  //   opacity: 0,
-	  //   duration: 1000,
-	  //   easing: "easeOutExpo",
-	  //   delay: 1000
-	  // });
-
 
   	$('#sushi').lightGallery();
   	$('#pizza').lightGallery();
