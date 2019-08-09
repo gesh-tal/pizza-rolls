@@ -20,9 +20,6 @@
 .about .text h2, .about .text span {
 	font-family: 'El Messiri', sans-serif;
 	font-size: 40px;
-/*	color: sandybrown;
-	color: lightsalmon;
-	color: coral;*/
 	color: darkorange;
 	margin-bottom: 20px;
 	text-shadow: 2px 2px 4px #000;
@@ -31,10 +28,6 @@
 	color: #000;
 	text-shadow: 2px 2px 6px #000;
 }
-
-
-
-
 
 @media (max-width: 910px) {
 	.about {
@@ -56,9 +49,3 @@
 		margin: 70px 0px 50px;
 	}
 }
-
-
-
-
-
-
